@@ -19,7 +19,7 @@
     <!-- Facebook y redes sociales (Open Graph) -->
     <meta property="og:title" content="Ronny Olivares | CV Web - RyogDev">
     <meta property="og:description" content="Explora el perfil profesional de Ronny Olivares (RyogDev): desarrollador web enfocado en diseño moderno, SEO y experiencias digitales personalizadas.">
-    <meta property="og:image" content="https://cv-web-ronny-olivares.netlify.app/img/preview.jpg">
+    <meta property="og:image" content="./images/Ronny.jpg">
     <meta property="og:url" content="https://cv-web-ronny-olivares.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ronny Olivares | CV Web - RyogDev">
     <meta name="twitter:description" content="Explora el perfil profesional de Ronny Olivares (RyogDev), desarrollador web creativo y enfocado en diseño moderno.">
-    <meta name="twitter:image" content="https://cv-web-ronny-olivares.netlify.app/img/preview.jpg">
+    <meta name="twitter:image" content="./images/Ronny.jpg">
     <meta name="google-site-verification" content="cVaTLrU2Ky7-7Di9KxfoaD1JZuRbt8G51Rm9KJLRzJc">
     
     <!-- Título de mi sitio/página web -->
@@ -40,20 +40,100 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="./images/Ronny.jpg" as="image">
 </head>
 <body>
+    <!-- CABEZA DE PÁGINA CV-WEB -->
     <header>
-        <section>
-            <img src="./images/Ronny.jpg" alt="foto personal de Ronny Olivares">
-            <h1>Ronny Olivares | CV Web</h1>
-            <p><strong>Junior Full-Stack Developer | Game developer</strong></p>
-        </section>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
+        <div>
+            <!-- div de la foto principal -->
+            <div>
+                <img src="./images/Ronny.jpg" alt="foto personal de Ronny Olivares" class="foto-principal">
+            </div>
 
+            <!-- div del título principal y su párrafo -->
+            <div>
+                <h1>Ronny Olivares | CV Web</h1>
+                <p><strong>Junior Full-Stack Developer | Game developer</strong></p>
+            </div>
+
+            <!-- div de información de encabezado -->
+            <div>
+                <ul class="list-encabezado">
+                    <li>ryogdev@gmail.com</li>
+                    <li>+51 938 523 125</li>
+                    <li>Lima, Perú</li>
+                </ul>
+            </div>
+
+            <!-- botones interactivos para descargar CV y contactar -->
+            <div>
+                <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa-solid fa-sun" id="theme-icon"></i></button>
+                <a href="/Cv-Ronny.pdf" download="CV_Ronny_Olivares" class="btn">Descargar CV</a>
+                <button><a href="#contacto">Contactar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CUERPO DE PÁGINA CV-WEB -->
+    <main>
+        <!-- SECCIÓN 1: SOBRE MÍ -->
+        <section>
+
+        </section>
+
+        <!-- SECCIÓN 2: EXPERIENCIA LABORAL -->
+        <section>
+
+        </section>
+
+        <!-- SECCIÓN 3: PROYECTOS DESTACADOS -->
+        <section>
+
+        </section>
+        
+        <!-- SECCIÓN 4: ENLACES -->
+        <section>
+
+        </section>
+
+        <!-- SECCIÓN 5: HABILIDADES TÉCNICA -->
+        <section>
+
+        </section>
+
+        <!-- SECCIÓN 6: EDUCACIÓN -->
+        <section>
+            
+        </section>
+
+        <!-- SECCIÓN 7: CERTIFICACIONES -->
+        <section>
+
+        </section>
+
+        <!-- SECCIÓN 8: IDIOMAS -->
+        <section>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA CV-WEB -->
+    <footer>
+        <div id="contacto">
+            <!-- div del título del pie de página y su párrafo -->
+            <div>
+                <h5>¿Interesado en trabajar juntos?</h5>
+                <p>Estoy siempre abierta a nuevas oportunidades y proyectos interesantes.</p>
+            </div>
+
+            <!-- button interactivos de pie de página para ponerse en contacto -->
+            <div>
+                <button><a href="mailto:ryogdev@gmail.com">Enviar email</a></button>
+                <button><a href="tel:+51934601831">Llamar</a></button>
+            </div>
+        </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
