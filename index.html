@@ -6,7 +6,7 @@
     <!-- Optimiza mi sitio para que se vea bien en móviles. ¡Clave para buena experiencia y SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Descripción de mi sitio/página web -->
-    <meta name="description" content="CV web de Ronny Olivares (RyogDev): desarrollador web creativo con experiencia en HTML, CSS, JavaScript, GitHub y Netlify. Diseño moderno, branding visual y enfoque en accesibilidad.">
+    <meta name="description" content="Ronny Olivares, desarrollador web full-stack y programador de videojuegos. Portafolio profesional con proyectos reales y enfoque en soluciones digitales.">
     <!-- Lista de palabras clave que describen mi sitio/página web -->
     <meta name="keywords" content="Ronny Olivares, RyogDev, desarrollador web, CV online, HTML, CSS, JavaScript, Netlify, GitHub, SEO, branding, diseño web, landing page">
     <!-- Le dice al navegador y a los motores que yo cree esta página -->
@@ -41,33 +41,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="./images/Ronny.jpg" as="image">
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ronny Olivares",
+    "alternateName": "RyogDev",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://cv-web-ronny-olivares.netlify.app/",
+    "image": "https://cv-web-ronny-olivares.netlify.app/images/Ronny.jpg",
+    "email": "mailto:ryogdev@gmail.com",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lima",
+    "addressCountry": "Perú"
+    },
+    "sameAs": [
+    "https://github.com/RyogDev",
+    "https://linkedin.com/in/ronnyolivares"
+    ]
+    }
+    </script>
 </head>
 <body>
     <!-- CABEZA DE PÁGINA CV-WEB -->
-    <header>
-        <div>
+    <header id="cv-header">
+        <div class="header-content">
             <!-- div de la foto principal -->
-            <div>
+            <div class="foto-container">
                 <img src="./images/Ronny.jpg" alt="foto personal de Ronny Olivares" class="foto-principal">
             </div>
 
             <!-- div del título principal y su párrafo -->
-            <div>
+            <div class="titulo-container">
                 <h1>Ronny Olivares | CV Web</h1>
                 <p><strong>Junior Full-Stack Developer | Game developer</strong></p>
             </div>
 
             <!-- div de información de encabezado -->
-            <div>
-                <ul class="list-encabezado">
-                    <li>ryogdev@gmail.com</li>
-                    <li>+51 938 523 125</li>
-                    <li>Lima, Perú</li>
-                </ul>
-            </div>
+            <address>
+                <div>
+                    <ul class="list-encabezado">
+                        <li>ryogdev@gmail.com</li>
+                        <li>+51 938 523 125</li>
+                        <li>Lima, Perú</li>
+                    </ul>
+                </div>
+            </address>
 
             <!-- botones interactivos para descargar CV y contactar -->
-            <div>
+            <div class="botones-header">
                 <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa-solid fa-sun" id="theme-icon"></i></button>
                 <a href="/Cv-Ronny.pdf" download="CV_Ronny_Olivares" class="btn">Descargar CV</a>
                 <button><a href="#contacto">Contactar</a></button>
@@ -78,8 +101,13 @@
     <!-- CUERPO DE PÁGINA CV-WEB -->
     <main>
         <!-- SECCIÓN 1: SOBRE MÍ -->
-        <section>
-
+        <section aria-labelledby="titulo-sobre-mi" role="region">
+            <h2 id="titulo-sobre-mi">Sobre mí</h2>
+            <div class="contenido-sobre-mi">
+                <p>Soy <strong>Ronny Olivares</strong>, desarrollador web <strong>full-stack</strong> y programador de videojuegos en constante evolución. Como siempre digo: <q>lo básico es la base de todo</q>. Comencé estudiando los fundamentos de la programación, luego me especialicé en <em>front-end</em> y, sin perder impulso, avancé hacia el <em>back-end</em>. Gracias a la dedicación y el esfuerzo, hoy me desempeño como <strong><em>full-stack web developer</em></strong>.</p>
+                <p>Me apasiona crear soluciones digitales intuitivas y funcionales. Actualmente estoy construyendo un portafolio con proyectos reales que demuestran mis habilidades en desarrollo full-stack y lógica de programación. Busco oportunidades —remotas o presenciales— donde pueda aportar mi talento, crecer profesionalmente y colaborar en equipos que valoren la innovación.</p>
+                <p>Estoy abierto a proyectos freelance, pasantías o posiciones junior en tecnología. Mi objetivo es seguir aprendiendo, aportar valor y evolucionar como profesional en entornos desafiantes.</p>
+            </div>
         </section>
 
         <!-- SECCIÓN 2: EXPERIENCIA LABORAL -->
